@@ -4,9 +4,13 @@ Note:
 Setting Up SAMBA on Raspberry Pi
 ---
 
+0. Install Samba Server
+
+	$sudo apt install -y samba
+
 1. Create folder to share
 
-$ mkdir ~/share
+	$ mkdir ~/share
 
 2. edit /etc/samba/smb.conf, Scroll down to the very bottom of the smb.conf configuration file and add the following:
 
