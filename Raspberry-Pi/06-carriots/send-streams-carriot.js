@@ -1,8 +1,8 @@
 var request = require("request");
 
 var send_stream = function(data){
-    var device = 'AP_1@zeldi.suryady' //"YOUR_ID_DEVELOPER_DEVICE"
-    var apikey = "66c1a5d2c2d8546ef20295bf3d8824467aafec8cb22525432c8d77244aa79447" //"YOUR APIKEY"
+    var device = "YOUR_ID_DEVELOPER_DEVICE";
+    var apikey =  "YOUR APIKEY";
 
     var options = { 
       method: 'POST',
@@ -30,10 +30,10 @@ var send_stream = function(data){
     
 };
 
-
 var datastream = {
   temp: '26', 
   hum: '40'
 }
 
 send_stream(datastream);
+
