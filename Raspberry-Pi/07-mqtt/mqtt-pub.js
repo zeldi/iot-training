@@ -15,7 +15,7 @@ client.on("connect",function(){
 
         // start reading data from sensor GPIO after connection to MQTT Broker
         var datastream =  readDHT11();
-
+        JSON.stringify(datastream);
         client.publish('sensor/dht11',datastream);
 })
 
