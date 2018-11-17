@@ -1,4 +1,4 @@
-var mqtt    = require('mqtt');
+var mqtt   = require('mqtt');
 var sensor = require('node-dht-sensor');
 
 var client  = mqtt.connect("mqtt:m15.cloudmqtt.com",{username:"tbtnsrke",password:'M93l7HPVUSiu',port:15704});
@@ -28,7 +28,7 @@ var readDHT11 = function() {
         var sensorData = {
            temp : result.temperature.toFixed(1),
            hum : result.humidity.toFixed(1)
-        }
-     
+        }     
         return sensorData;	
 }
+
