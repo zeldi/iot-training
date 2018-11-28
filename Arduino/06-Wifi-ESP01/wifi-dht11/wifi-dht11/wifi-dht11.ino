@@ -30,7 +30,8 @@ void setup()
   
   // connect to the router with the password  
   // (this configuration must be done, because your router has a different name from my and password)
-  sendData("AT+CWJAP='quend2012','02304304\'\r\n",10000,DEBUG); 
+//  sendData("AT+CWJAP='quend2012','02304304\'\r\n",10000,DEBUG); 
+  sendData("AT+CWJAP='HW10','mosquitto\'\r\n",10000,DEBUG); 
   
   // Returns the IP to which it is connected and the Station IP
   sendData("AT+CIFSR\r\n",1000,DEBUG); 

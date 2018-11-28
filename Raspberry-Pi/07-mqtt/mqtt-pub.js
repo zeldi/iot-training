@@ -1,5 +1,5 @@
 var mqtt   = require('mqtt');
-var sensor = require('node-dht-sensor');
+//var sensor = require('node-dht-sensor');
 
 var client  = mqtt.connect("mqtt:m15.cloudmqtt.com",{username:"tbtnsrke",password:'M93l7HPVUSiu',port:15704});
 

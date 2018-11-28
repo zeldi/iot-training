@@ -13,7 +13,6 @@ void setup() {
 void loop() {
 
   value = digitalRead(pin);
-
   if (value == HIGH) {
     digitalWrite(led, HIGH);
 
@@ -29,4 +28,5 @@ void loop() {
       pirState = LOW;
       }
     }
+
 }

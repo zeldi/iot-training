@@ -21,8 +21,11 @@ void loop() {
   
   long duration, distance;
   
+  //Clear the trigPin
   digitalWrite(trigPin, LOW);  
   delayMicroseconds(2); 
+  
+  // The trigPin is required to be set to HIGH state for 10 micro seconds
   digitalWrite(trigPin, HIGH);
   delayMicroseconds(10);
   digitalWrite(trigPin, LOW);
